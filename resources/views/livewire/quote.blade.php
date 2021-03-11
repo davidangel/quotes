@@ -8,7 +8,6 @@
     </div>
     <div class="w-auto text-gray-700">
       {{ $author }}
-      {{-- {{ $quoteId }} --}}
     </div>
   </div>
 
