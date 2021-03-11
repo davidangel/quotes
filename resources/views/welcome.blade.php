@@ -32,7 +32,9 @@
     @endif --}}
 
     <div class="flex flex-col">
-      @livewire('quote')
+
+      @livewire('quote', ['quoteId' => $id])
+
     </div>
   </div>
   @livewireScripts
