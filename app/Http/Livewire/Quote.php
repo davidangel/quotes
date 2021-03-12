@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Quote as ModelsQuote;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Livewire\Component;
 

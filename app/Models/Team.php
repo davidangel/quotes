@@ -41,4 +41,8 @@ class Team extends JetstreamTeam
         'updated' => TeamUpdated::class,
         'deleted' => TeamDeleted::class,
     ];
+
+    public function quotes() {
+        return $this->hasMany(Quote::class);
+    }
 }

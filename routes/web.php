@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{id?}', function ($id=null) {
-    return view('welcome')->with(['id' => intval($id)]);
-});
-
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('/{id?}', function ($id=null) {
+    return view('welcome')->with(['id' => intval($id)]);
+});
